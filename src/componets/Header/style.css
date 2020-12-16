@@ -1,0 +1,11 @@
+#containerHeader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #FF7D00;
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #DF7401;
+    padding: 0
+}

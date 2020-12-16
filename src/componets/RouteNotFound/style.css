@@ -1,0 +1,72 @@
+#containerRouteNotFound{
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    max-width: 920px;
+    margin-top: 50px
+}
+
+.RouteNotFound{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 40vh;
+}
+
+.RouteNotFound h1{
+   text-align: center
+}
+
+#containerRouteNotFound small{
+    text-align: center;
+    font-size: 18px;
+    margin: 5px
+}
+
+#containerRouteNotFound a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+
+    text-decoration: none;
+    border: 2px solid #ff7d00;
+    width: 100%;
+    max-width: 130px;
+    height: 40px;
+    border-radius: 25px;
+    color: #ff7d00;
+    font-size: 19px;
+    font-weight: bold;
+    transition: 0.1s;
+}
+
+#containerRouteNotFound a:hover{
+    background: #ff7d00;
+    color: #ffff;
+    font-weight: bold
+}
+
+#containerRouteNotFound a .arrow{
+    animation: is-loading-Arrow 1s ease infinite;
+    margin-right: 10px;
+    font-size: 23px;
+}
+
+@keyframes is-loading-Arrow{
+    to{
+        opacity: 0.1;
+        transform: scale(1) translateX(5px)
+    }
+}
+
+@media (max-width:450px){
+    .RouteNotFound h1{
+        font-size: 25px
+    }
+
+    #containerRouteNotFound small{
+        font-size: 17px;
+    }
+}

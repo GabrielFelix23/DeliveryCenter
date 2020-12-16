@@ -1,0 +1,176 @@
+#contianerListUser{
+    margin: 0 auto;
+    padding: 0 auto;
+    width: 100%;
+    max-width: 920px;
+}
+
+#contianerListUser .containerSearch{
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px 0 0;
+    position: relative;
+}
+
+#contianerListUser .containerSearch .search{
+    width: 100%;
+    height: 30px;
+    margin-top: 10px; 
+    padding: 0 0 0 40px;
+    font-size: 15px;
+    border: 1px solid #A4A4A4;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+#contianerListUser .containerSearch .search:focus{
+    border: 1px solid #848484;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+}
+
+#contianerListUser .containerSearch svg{
+    position: absolute; 
+    margin: 55px 10px 7px;
+    color: #424242
+}
+
+#contianerListUser section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 20px 0 20px
+}
+
+#contianerListUser .user{
+    margin: 10px
+}
+
+#contianerListUser .imageUser{
+    display: flex;
+    align-items: center;
+    flex-direction: row
+}
+
+#contianerListUser .titulo{
+    font-style: italic;
+}
+
+#contianerListUser section .containerListDataUsers{
+    display: flex;
+    flex-direction: column;
+
+    background: #fff;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    margin: 15px;
+    padding: 40px;
+}
+
+#contianerListUser section .containerListDataUsers small{
+    font-size: 18px;
+    margin-left: 75px;
+    opacity: 0.7;
+}
+
+#contianerListUser section .containerListDataUsers small span{
+    font-size: 19px;
+    font-weight: bold;
+}
+
+#contianerListUser section .containerListDataUsers svg{
+    font-size: 28px;
+    margin: 20px 0 -8.5px 40px;
+    color: #DF7401
+}
+
+@media screen and (max-width:430px){
+    #contianerListUser .user{
+        width: 110px;
+    }
+
+    #contianerListUser .titulo{
+        font-size: 23px;
+    }
+
+    #contianerListUser section .containerListDataUsers small{
+        font-size: 15px;
+        margin-left: 25px;
+    }
+    #contianerListUser .containerSearch .search{
+        width: 100%;
+        height: 28px;
+        margin-top: 10px; 
+        padding: 0 0 0 35px;
+        font-size: 14px;
+        border: 1px solid #A4A4A4;
+        border-radius: 5px;
+        box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+    }
+    #contianerListUser section .containerListDataUsers small span{
+        font-size: 16px;
+    }
+    
+    #contianerListUser section .containerListDataUsers svg{
+        font-size: 28px;
+        margin: 20px 0 -7.5px -7px;
+    }
+    #contianerListUser .containerSearch svg{
+        position: absolute; 
+        margin: 45px 10px 7px;
+        color: #424242
+    }
+}
+
+@media screen and (max-width:330px){
+    #contianerListUser .user{
+        width: 90px;
+    }
+    #contianerListUser .titulo{
+        font-size: 21px;
+    }
+    #contianerListUser .containerSearch svg{
+        position: absolute; 
+        font-size: 13px;
+        margin: 42px 10px 7px;
+        color: #424242
+    }
+    #contianerListUser .containerSearch .search{
+        width: 100%;
+        height: 28px;
+        margin-top: 10px; 
+        padding: 0 0 0 35px;
+        font-size: 14px;
+        border: 1px solid #A4A4A4;
+        border-radius: 5px;
+        box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+    }
+}
+
+@media screen and (max-width:280px){
+    #contianerListUser .user{
+        width: 80px;
+    }
+    #contianerListUser .titulo{
+        font-size: 18px;
+    }
+    #contianerListUser .containerSearch svg{
+        position: absolute; 
+        font-size: 12px;
+        margin: 38px 10px 7px;
+        color: #424242
+    }
+    #contianerListUser .containerSearch .search{
+        width: 100%;
+        max-width: 40vh;
+        height: 27px;
+        margin-top: 10px; 
+        padding: 0 0 0 30px;
+        font-size: 13px;
+        border: 1px solid #A4A4A4;
+        border-radius: 5px;
+        box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+    }
+}
