@@ -7,20 +7,20 @@ import user from '../Images/user.png'
 
 class Home extends React.Component{
     state = {
-        listUser: [],
+        userList: [],
         search: ''
     }
 
     async componentDidMount(){
         const response = await api.get("")
-        this.setState({listUser: response.data})
+        this.setState({userList: response.data})
     }
 
     render(){
-        const {listUser, search} = this.state
+        const {userList, search} = this.state
         
         return(
-            <div id="contianerListUser">
+            <div id="contianerUserList">
                 <div className="imageUser">
                     <img src={user} className="user" alt="User"/>
                     <div className="containerSearch">
@@ -34,7 +34,7 @@ class Home extends React.Component{
                 
                 
                
-                {listUser.filter((data) => {
+                {userList.filter((data) => {
                     if(search === '') {
                         return data
                     }else if(data.name.toLowerCase().includes(search.toLowerCase())){
