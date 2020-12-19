@@ -21,6 +21,7 @@ class Home extends React.Component{
         
         return(
             <div id="contianerUserList">
+                {/*Search*/}
                 <div className="imageUser">
                     <img src={user} className="user" alt="User"/>
                     <div className="containerSearch">
@@ -31,10 +32,9 @@ class Home extends React.Component{
                         <BsSearch/>
                     </div>
                 </div>
-                
-                
-               
-                {userList.filter((data) => {
+
+                {/*Filtering and Listing*/
+                userList.filter((data) => {
                     if(search === '') {
                         return data
                     }else if(data.name.toLowerCase().includes(search.toLowerCase())){
@@ -67,7 +67,6 @@ class Home extends React.Component{
                         </section>
                     )
                 })}
-
             </div>
         )
     }
